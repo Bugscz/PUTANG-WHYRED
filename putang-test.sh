@@ -24,7 +24,7 @@ KERN_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb
 BASE_VER="Putang-TEST"
 VER="-v1-$(date +"%Y-%m-%d"-%H%M)-"
 BUILD_START=$(date +"%s")
-ANYKERNEL_DIR=/home/android/Downloads/Test/
+ANYKERNEL_DIR=/home/android/Downloads/Putang-Test/
 EXPORT_DIR=/home/android/Desktop/zips/
 
 # Change every build
