@@ -39,8 +39,8 @@ white='\e[0;37m'        # White
 nocol='\033[0m'         # Default
 
 # Tweakable Stuff
-export KBUILD_BUILD_USER="wind"
-export KBUILD_BUILD_HOST="wind-miui"
+export KBUILD_BUILD_USER="Wind"
+export KBUILD_BUILD_HOST="Wind-MIUI"
 export KBUILD_COMPILER_STRING=$(/home/android/Desktop/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 
 #COMPILATION SCRIPTS
@@ -73,9 +73,9 @@ echo "          Cooking PUTANG!!        "
 echo -e "***********************************************$nocol"
 
 make -j$(nproc --all) O=out ARCH=arm64 \
-                      CC="/home/android/Desktop/clang/bin/clang" \
+                      CC="/home/android/Desktop/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc-4.9" \
                       CLANG_TRIPLE="aarch64-linux-gnu-" \
-                      CROSS_COMPILE="/home/android/Desktop/tc/bin/aarch64-linux-android-"
+                      CROSS_COMPILE="/home/android/Desktop/aarch64-linux-android-4.9/bin/aarch64-linux-android-"
 
 if ! [ -a $ZIMAGE ];
 then
