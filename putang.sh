@@ -23,7 +23,7 @@ KERN_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb
 BASE_VER="Putang-Unleashed"
 VER="-v2-$(date +"%Y-%m-%d"-%H%M)-"
 BUILD_START=$(date +"%s")
-ANYKERNEL_DIR=/home/android/Downloads/Test/
+ANYKERNEL_DIR=/home/android/Downloads/Putang-Kernel/
 EXPORT_DIR=/home/android/Desktop/zips/
 
 # Change every build
