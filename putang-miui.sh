@@ -43,8 +43,8 @@ nocol='\033[0m'         # Default
 # Tweakable Options Below
 export ARCH=arm64
 export SUBARCH=arm64
-export KBUILD_BUILD_USER="MIUI"
-export KBUILD_BUILD_HOST="Putangnized"
+export KBUILD_BUILD_USER="Putangnized"
+export KBUILD_BUILD_HOST="MIUI"
 export CROSS_COMPILE="/home/android/Desktop/tc/bin/aarch64-linux-android-"
 export KBUILD_COMPILER_STRING=$(/home/android/Desktop/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 
